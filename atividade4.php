@@ -2,28 +2,28 @@
 	$num1 = 1;
 	$num2 = 2;
 	$num3 = 3;
-	$f = 0;
-	$cont = true;
+	$t = 0;
 
-	while ($troca != true) {
-    	
+	$troca = true; 
 
-    // Compara num1 e num2
-    	if ($num1 < $num2) {
-        	$temp = $num1;
-        	$num1 = $num2;
-        	$num2 = $temp;
-        	$troca = false;
-    	}	
+	while ($troca != false) { 
+		$troca = false;
 
-    // Compara num2 e num3
-    	if ($num2 < $num3) {
-        	$t = $num2;
-       		$num2 = $num3;
-        	$num3 = $t;
-        	
-    	}else{
-    		$troca = false;
-    	}
+	    if ($num1 < $num2) {
+	        $temp = $num1;
+	        $num1 = $num2;
+	        $num2 = $temp;
+	        $troca = true; 
+	    }
+
+	    
+	    if ($num2 < $num3) {
+	        $temp = $num2;
+	        $num2 = $num3;
+	        $num3 = $temp;
+	        $troca = true; 
+	    }
 	}
+
+	echo "Números em ordem decrescente: $num1 $num2 $num3";
 ?>
