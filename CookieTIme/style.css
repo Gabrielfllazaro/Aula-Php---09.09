@@ -1,0 +1,9 @@
+body{
+	background-color: pink;
+}
+
+img{
+	widht: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
